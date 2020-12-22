@@ -64,13 +64,11 @@ h2 {
   margin-top: 40px;
 }
 
-@media only screen and (max-width: 1200px){
-  h1 {
-    font-size: 2rem;
-  }
-
+@media only screen and (max-width: 1100px){
   h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-right: 0;
   }
 }
 
@@ -78,11 +76,11 @@ h2 {
 
 header {
   position: fixed;
-  left: 10%;
+  left: 7.5%;
   display: flex;
   height: 7.5rem;
   align-items: center;
-  width: 80%;
+  width: 85%;
   background-color: hsl(86, 84%, 40%);
   border-bottom: 2px solid hsl(0, 0%, 58%);
 }
@@ -93,7 +91,7 @@ header {
   margin-bottom: auto;
   margin-left: 0.5rem;
   margin-bottom: 1rem;
-  width: 50%;
+  width: 60%;
 }
 
 nav ul {
@@ -112,7 +110,7 @@ nav li a:hover {
   color: hsl(285, 84%, 29%);
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
   header {
     flex-direction: column;
     align-items: center;
@@ -121,9 +119,10 @@ nav li a:hover {
   } 
 
   #pagetitle {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     width: 100%;
     text-align: center;
+    font-size: 4rem;
   }
 
   nav ul {
@@ -137,7 +136,7 @@ main {
   padding-top: 6.5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 85%;
   background-color: hsl(59, 75%, 94%);
   border-left: 1px solid hsl(0, 0%, 58%);
   border-right: 1px solid hsl(0, 0%, 58%);
@@ -151,9 +150,17 @@ main h1 {
   color: hsl(285, 84%, 29%);
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
   main {
     width: 100%;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+  }
+
+  main p {
+    font-size: 2rem;
   }
 }
 
@@ -231,6 +238,29 @@ em {
   border-bottom: 1px solid hsl(0, 0%, 58%);
 }
 
+
+@media only screen and (max-width: 1100px){
+  .family {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instrument {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  
+  .imgbox {
+    margin: 0 auto;
+    border: 1px solid hsl(0, 0%, 58%);
+  }
+
+  figcaption {
+    font-size: 3rem;
+  }
+}
+
 /* People */
 
 #people {
@@ -267,7 +297,7 @@ em {
 
 footer {
   background-color: hsl(285, 84%, 29%);
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding-top: 0.5rem;
   height: 2rem;
